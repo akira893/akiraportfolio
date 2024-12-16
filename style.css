@@ -1,0 +1,217 @@
+*{
+    box-sizing: border-box;
+    margin:0%;
+    padding:0%;}
+
+body {
+     scroll-behavior: smooth; 
+     background-color: #0f0f0f; 
+     color: white; }
+
+.main-navbar {
+    background-color: #f13c60;
+    border-radius: 40px;
+    max-width: 90%;
+    margin: 10px auto;
+    padding: 5px 0;
+  }
+
+.main-navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #f9f5e8;
+    padding: 2px;
+    font-family: 'Courier New', Courier, monospace;
+}
+  
+.main-navbar .navbar-brand img {
+      height: 40px;
+      padding: 2px;
+      object-fit: contain;
+    }
+
+
+.main-navbar .nav-link {color: #fdf5db;
+      font-family: 'Courier New', Courier, monospace;
+      transition: color 0.3s, transform 0.3s;}
+  
+.main-navbar .nav-link:hover {color: #fcc600;
+    transform: scale(1.1);}
+
+.main-navbar .nav-link.active {color: #fcc600; }
+.navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(252, 198, 0)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");}
+  
+ @media (max-width: 768px) {
+        .main-navbar {
+            max-width: 95%; 
+            margin: auto; 
+        }}
+        
+section#home {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    padding: 10px;
+    text-align: center;}
+    
+#hello {
+    width: 90%;
+    max-width: 60%; 
+    text-align: center;
+    margin-bottom: 20px;}
+    
+#img1 {
+    width: 90%; 
+    max-width: 40%; 
+    }
+    
+#img1 img {
+     width: 100%;
+    height: auto;
+    border-radius: 10px;}
+    
+    
+@media (min-width: 768px) {
+    section#home {
+            flex-direction: row; 
+            padding: 50px; }
+    
+    #hello {
+            text-align: left;
+            width: 50%; }
+    
+    #img1 {
+            width: 50%; } }
+
+h1{ font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 8rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #fcf5de;
+  text-shadow: 0 0 5px #ffd500,
+   0 0 15px #f2b704, 
+   0 0 20px #e6c700, 
+   0 0 25px #e6c700, 
+   0 0 30px #e6c700, 
+   0 0 35px #e6c700;}
+
+h2{ font-family: Helvetica, sans-serif;
+    font-size: 4rem;
+    color: #f2b704;}
+
+h4{
+    font-family:Helvetica, sans-serif;
+    font-size: 2rem;
+    color: #fdf5db;} 
+
+.tab-content p {
+  font-size: .75rem;
+}
+
+section#about {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    padding: 10px;
+    text-align: center;}
+
+#about .about-subheading{
+    color: #f13c60;
+    font-size: 1.5rem;}
+
+
+#about .nav-pills .nav-link {
+    color: #fcf5de;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 50px;
+    padding: 10px 20px;
+    transition: all 0.3s;
+}
+
+#about .nav-pills .nav-link:hover {
+    color: #fcc600;
+    transform: scale(1.2);
+}
+
+#about .nav-pills .nav-link.active {
+    color:#fcc600;
+    background-color: #0f0f0f;
+    transform: scale(1.2)
+}
+#about .tab-content {
+    text-align: left;}
+
+
+    .work-card {
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .work-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+      
+      .work-card::before {
+        content: ''; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, #080808, #45090900); 
+        opacity: 0; 
+        transition: opacity 0.3s ease;
+      }
+      
+      .work-card:hover::before {
+        opacity: 1; 
+        transform: scale(1.05);
+      }
+          .work-card:hover .work-text {
+            display: block; 
+          }
+          .work-text {
+            display: none; 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fffefe;
+            font-size: 18px;
+            font-weight: bold;}
+      
+#contact a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+#contact a img:hover {
+  transform: scale(1.2); 
+}
+
+#contact a {
+  color: white; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#contact a:hover {
+  color: #BA1818;
+}
+
+form .btn-primary {
+  background-color:#f2b704;
+  border: none;
+}
+
+form .btn-primary:hover {
+  background-color:#f2b704;
+}
+
